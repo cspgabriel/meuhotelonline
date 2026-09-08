@@ -2,8 +2,16 @@
 
 > **Sites de Alta Conversão para Hotéis e Pousadas que Lotam Quartos Sem Depender do Booking.**
 
+- 🌐 **URL de Produção Ativa:** [https://hoteis.criacaodesitesbr.com](https://hoteis.criacaodesitesbr.com)
+- ☁️ **Cloudflare Pages:** [https://meuhotelonline.pages.dev](https://meuhotelonline.pages.dev)
+- 🐙 **Repositório GitHub:** [https://github.com/cspgabriel/meuhotelonline](https://github.com/cspgabriel/meuhotelonline)
+
+---
+
+## 🎯 Síntese Estratégica das 3 Referências
+
 Criado a partir da fusão estratégica das três maiores referências do mercado:
-1. **Web Design Brasil** (`webdesignbrasil.org` — *"a mais legal"*): Estética Emerald Luxury (`#1a3828`, `#22c55e`, `#facc15`), copy de alto impacto contra comissões das OTAs, marquee contínuo de prova social e credenciais em glassmorphism.
+1. **Web Design Brasil** (`webdesignbrasil.org` — *"a mais legal"*): Estética Emerald Luxury (`#0c1a12`, `#142a1d`, `#22c55e`, `#facc15`), copy de alto impacto contra comissões das OTAs, marquee contínuo de prova social e credenciais em glassmorphism.
 2. **HotelariaWeb** (`hotelariaweb.com`): Tecnologia **WhatsApp Capture** (pré-qualificação de hóspedes com datas e acomodações antes de abrir o WhatsApp) e simplificação da operação hoteleira.
 3. **Cloudbeds** (`cloudbeds.com`): *“Beleza recebe elogios. Inteligência gera reservas.”* Menos código e complexidade, mais hospitalidade e conversão.
 
@@ -35,7 +43,7 @@ Acesse `http://localhost:3000` no seu navegador.
 ```
 meuhotelonline.com.br/
 ├── index.html              # Landing page principal completa e semântica
-├── README.md               # Documentação e guia de deploy
+├── README.md               # Documentação e links de produção
 └── assets/
     ├── css/
     │   └── styles.css      # Sistema de cores emerald luxury, glassmorphism e animações
@@ -45,20 +53,12 @@ meuhotelonline.com.br/
 
 ---
 
-## 🌐 Deploy em Produção
+## 🌐 Deploy Contínuo no Cloudflare Pages
 
-Este projeto é 100% estático, seguro e ultrarrápido (Core Web Vitals nota 100). Pode ser publicado imediatamente em qualquer provedor:
-
-### Cloudflare Pages (Recomendado)
-1. Conecte o repositório ou faça deploy via Wrangler:
-   ```bash
-   npx wrangler pages deploy . --project-name=meuhotelonline
-   ```
-2. Aponte o domínio personalizado `meuhotelonline.com.br` no painel da Cloudflare.
-
-### Vercel
+O site está implantado nativamente no Cloudflare Pages com SSL global automático:
 ```bash
-npx vercel --prod
+# Atualizar deploy quando houver mudanças locais
+npx wrangler pages deploy . --project-name=meuhotelonline --branch=main --commit-dirty=true
 ```
 
 ---
