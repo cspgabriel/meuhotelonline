@@ -1,9 +1,12 @@
 # Estratégia de Copywriting, Identidade Visual & Materiais de MKT — Meu Hotel Online
 
-> **Documento Estratégico gerado via `guimkt-brandformance-planner` e `guimkt-classic-advertising-creative`**  
-> **Cliente:** Meu Hotel Online (`meuhotelonline.com.br`)  
-> **Base de Identidade Visual:** Logotipo Oficial Enviado (Navy Blue `#002B49` + Teal/Cyan `#00A8B5`)  
-> **Headline Central:** *"Criação de Sites para Hotéis e Pousadas que Lotam Quartos Sem o Booking"*  
+> **Documento Estratégico gerado via guimkt-brandformance-planner e guimkt-classic-advertising-creative**  
+> **Cliente:** Meu Hotel Online (meuhotelonline.com.br / hoteis.criacaodesitesbr.com)  
+> **Base de Identidade Visual:** Logotipo Oficial Enviado (Navy Blue #002B49 + Teal/Cyan #00A8B5)  
+> **Público-Alvo Real:** Hotéis, Pousadas, Chalés e Meios de Hospedagem que **AINDA NÃO ESTÃO ONLINE** (sem site ou invisíveis no Google).  
+> **Promessa Central:** *"Coloque Seu Hotel ou Pousada na Internet de Forma Rápida, Profissional e Descomplicada."*  
+> **Data:** 2026-09-08  
+> **Versão:** 2.0.0 (Ajuste Estratégico de Posicionamento)
 
 ---
 
@@ -21,56 +24,53 @@ A partir da imagem oficial do logotipo **Meu Hotel Online (Sites para Hotéis e 
 
 ---
 
-## 🎯 2. Banco de Ganchos de Alta Conversão (Hook Bank por Canal)
+## 🎯 2. Banco de Ganchos de Alta Conversão (Hook Bank para quem NÃO está Online)
 
-### 2.1 Ângulo 1: Aversão à Perda da Comissão (Loss Aversion — O Mais Forte)
-1. *"Quanto do lucro do seu hotel vai para a Holanda todo mês na fatura do Booking?"*
-2. *"Se você tem 15 quartos, 3 deles trabalham só para pagar a comissão do Booking.com."*
-3. *"O hóspede conheceu sua pousada no Google, mas reservou no Booking por medo do seu site. Quanto isso te custou hoje?"*
-4. *"Pare de dar 20% de desconto forçado para as OTAs enquanto você arca com 100% dos custos fixos."*
-5. *"Criação de sites para hotéis que querem fechar reservas no Pix e no cartão sem intermediários."*
+### 2.1 Ângulo 1: A Dor da Invisibilidade no Google & Perda de Turistas
+1. *"Quando um turista pesquisa 'pousada em [sua cidade]', o seu hotel aparece ou só o do seu concorrente?"*
+2. *"92% dos viajantes pesquisam no Google antes de escolher onde se hospedar. Se você não tem site, sua pousada não existe para eles."*
+3. *"O turista quer viajar para a sua região agora, mas não encontra fotos nem o contato oficial do seu hotel na internet."*
+4. *"Você investiu anos cuidando da sua pousada. Não deixe ela invisível no mundo digital."*
+5. *"Chega de depender apenas de placa na beira da estrada ou de indicação boca a boca para fechar diárias."*
 
-### 2.2 Ângulo 2: Mecanismo Único — WhatsApp Capture (Inovação Prática)
-6. *"Chega de mensagens 'Olá, qual o valor?' no WhatsApp. Saiba quem é o hóspede, datas e quantidade de pessoas antes de responder."*
-7. *"Como o WhatsApp Capture transformou a recepção de mais de 400 pousadas em uma máquina de fechar reservas."*
-8. *"O canal preferido do viajante brasileiro agora integrado ao site do seu hotel com qualificação automática."*
+### 2.2 Ângulo 2: Credibilidade & O Fim do Amadorismo no WhatsApp
+6. *"Quando o hóspede pede 'qual é o site de vocês?', você ainda manda 40 fotos soltas no WhatsApp ou diz que não tem site?"*
+7. *"Passe a segurança de uma pousada oficial com endereço próprio (pousadax.com.br), fotos organizadas das suítes e botão direto para o seu WhatsApp."*
+8. *"Turistas têm medo de golpes na internet. Ter um site profissional oficial é o que separa uma pousada confiável de uma que gera desconfiança."*
 
-### 2.3 Ângulo 3: Simplicidade Operacional (Cloudbeds Philosophy)
-9. *"Beleza recebe elogios. Inteligência gera reservas diretas."*
-10. *"Menos código e dor de cabeça no WordPress. Mais tempo para cuidar dos seus hóspedes."*
-11. *"Um site que sua recepção atualiza em 30 segundos, sem depender de agência ou programador."*
-
----
-
-## 📢 3. Estrutura de Anúncios Meta Ads (Carrossel & Feed)
-
-### Anúncio 1: O Confronto com o Booking (Foco no Dono / Diretor)
-- **Criativo:** Imagem dividida ao meio.
-  - *Lado Esquerdo (Vermelho desbotado):* Fatura do Booking com taxa de 22% retida. Texto: "O que sobra para você?".
-  - *Lado Direito (Navy + Teal brilhante):* Notificação de Pix recebido na conta do hotel: "Reserva Direta confirmada! 100% de lucro seu".
-- **Texto Principal:**
-  > *"Você acorda às 6h da manhã, cuida do café, dos quartos, da equipe e da manutenção. No final do mês, quem fica com a maior fatia da sua margem líquida é o Booking.  
-  > Com o Meu Hotel Online, seu meio de hospedagem tem site ultrarrápido, motor de reservas direto e WhatsApp Capture para você parar de sustentar intermediários.  
-  > Pagamento único, sem comissão por hóspede e entrega em até 10 dias úteis."*
-- **CTA:** Saiba Mais &rarr; Abre WhatsApp Capture Modal.
-
-### Anúncio 2: O Teste do Celular (Foco em Experiência & Velocidade)
-- **Criativo:** Vídeo curto de 15 segundos mostrando um viajante abrindo o site do hotel no celular da estrada em menos de 1 segundo e clicando em "Reservar pelo WhatsApp".
-- **Texto Principal:**
-  > *"85% das pessoas pesquisam pousadas pelo celular. Se o seu site demora mais de 3 segundos para carregar, o hóspede fecha a aba e reserva pelo Booking.  
-  > Desenvolvemos sites de alta velocidade com Core Web Vitals nota 100 e visual encantador que geram desejo imediato."*
-- **CTA:** Solicitar Diagnóstico Gratuito do seu Site.
+### 2.3 Ângulo 3: Simplicidade Absoluta — Chave na Mão (Turnkey)
+9. *"Você não precisa entender nada de internet nem de tecnologia. Nós criamos tudo para você em até 5 dias úteis."*
+10. *"Basta nos mandar as fotos pelo WhatsApp. Nós colocamos seu hotel no ar, configurado no Google e pronto para receber hóspedes."*
+11. *"Sem mensalidades eternas de agência e sem complicação. Pagamento único acessível e o site é 100% seu."*
 
 ---
 
-## 🚀 4. Plano de Otimização da Landing Page Principal (`meuhotelonline.com.br`)
+## 📢 3. Estrutura de Anúncios Meta Ads (Foco em Hoteleiros sem Site)
 
-Com a definição da identidade visual baseada no logo oficial e o mapeamento profundo do ICP, as seguintes melhorias serão implementadas na landing page:
-1. **Atualização da Paleta de Cores:**
-   - Substituição do verde floresta pelo **Deep Navy (`#002B49`)** e **Vibrant Teal (`#00A8B5`)**, alinhando 100% com a identidade do logo oficial enviado pelo usuário.
-2. **Aplicação do Logotipo Oficial:**
-   - Inserção do arquivo `assets/images/logo-meu-hotel-online.png` no cabeçalho, no rodapé e no modal.
-3. **Refinamento das Copys com Base no ICP:**
-   - Inclusão do conceito da perda financeira com comissões de 15% a 25%.
-   - Destaque para o WhatsApp Capture como mecanismo único.
-   - Reforço da promessa central: *"Criação de Sites para Hotéis e Pousadas que Lotam Quartos Sem o Booking"*.
+### Anúncio 1: A Pousada Invisível (Foco no Dono / Família)
+- **Criativo:** Imagem dividida.
+  - *Lado Esquerdo:* Tela de celular com pesquisa no Google *"pousada em [cidade]"* mostrando apenas concorrentes com fotos bonitas. Texto: *"Onde está o seu hotel?"*.
+  - *Lado Direito:* Site elegante com o logotipo Meu Hotel Online e fotos da pousada com selo *"Site Oficial no Ar em 5 Dias"*.
+- **Texto Principal:**
+  > *"Toda semana, famílias inteiras viajam para a sua cidade e procuram onde ficar no celular.  
+  > Se a sua pousada não tem site próprio, esses hóspedes simplesmente reservam no seu concorrente.  
+  > Nós colocamos seu hotel ou pousada na internet em até 5 dias úteis: endereço oficial próprio, fotos profissionais das suítes e botão direto para o seu WhatsApp.  
+  > Tudo pronto 'chave na mão' — você só nos manda as fotos e nós cuidamos de tudo. Sem mensalidades!"*
+- **CTA:** Falar no WhatsApp → Abre WhatsApp Capture Modal.
+
+### Anúncio 2: O Fim das Fotos Soltas no Zap
+- **Criativo:** Print de conversa no WhatsApp onde o cliente pergunta: *"Tem site para eu ver as acomodações?"* e o dono envia um link limpo e elegante da pousada.
+- **Texto Principal:**
+  > *"Passe mais credibilidade e feche diárias muito mais rápido.  
+  > Tenha um site profissional para o seu meio de hospedagem com fotos das acomodações, mapa de localização e pré-reserva direto no seu WhatsApp.  
+  > Investimento acessível a partir de 12x de R$ 189. Seu hotel online para sempre."*
+- **CTA:** Solicitar Orçamento no WhatsApp.
+
+---
+
+## 🚀 4. Diretrizes de Copy para a Landing Page (`index.html`)
+
+1. **Headline:** *"Coloque Seu Hotel ou Pousada na Internet de Forma Rápida, Profissional e Descomplicada."*
+2. **Subheadline:** *"Seu site oficial no ar em até 5 dias úteis, configurado no Google e pronto para receber hóspedes direto no seu WhatsApp — sem precisar entender nada de tecnologia e sem mensalidades de agência."*
+3. **Público Prioritário:** Pousadas, chalés, hotéis fazenda e hotéis familiares que ainda não possuem site ou estão com sites abandonados/invisíveis.
+4. **Mecanismo:** Entrega "Chave na Mão" + WhatsApp Capture + SEO no Google + Preço Único sem comissões nem taxas perpétuas.

@@ -1,83 +1,78 @@
 # ICP Consolidado — Meu Hotel Online (meuhotelonline.com.br)
 
-> **Documento Estratégico gerado via `guimkt-icp-ideal-customer-profile` (Etapa 1 do pipeline `/esc-start`)**  
+> **Documento Estratégico Atualizado via `guimkt-icp-ideal-customer-profile`**  
 > **Cliente:** Meu Hotel Online  
-> **Solução:** Criação de Sites para Hotéis e Pousadas que Lotam Quartos Sem o Booking  
+> **Público-Alvo Real:** **Hotéis, Pousadas, Chalés e Meios de Hospedagem que AINDA NÃO ESTÃO ONLINE** (sem site ou invisíveis no Google).  
+> **Promessa Central:** *"Coloque Seu Hotel ou Pousada na Internet de Forma Rápida, Profissional e Descomplicada."*  
 > **Data:** 2026-09-08  
-> **Versão:** 1.0.0  
+> **Versão:** 2.0.0 (Ajuste Estratégico de Posicionamento)  
 
 ---
 
 ## 📊 1. ICP — As 9 Dimensões Estratégicas
 
-| Dimensão | Perfil do Hoteleiro / Pousadeiro Ideal (ICP) |
+| Dimensão | Perfil do Hoteleiro / Pousadeiro que AINDA NÃO ESTÁ ONLINE |
 | :--- | :--- |
-| **1. Faixa Etária** | **34 a 58 anos** (predominância de 40-52 anos). Perfil maduro, tomador de decisões focado no retorno financeiro e na tranquilidade operacional. |
-| **2. Profissão** | Empresários hoteleiros, proprietários de pousadas boutique/praia/serra, investidores de hospitalidade e gestores turísticos. |
-| **3. Cargo (Decisores)** | **1. Sócio-Proprietário / Dono da Hospedagem** (decisor financeiro final).<br>**2. Gerente Geral (General Manager)** (responsável pela meta de faturamento e operação).<br>**3. Gerente de Reservas / Revenue Manager** (influenciador técnico focado em desintermediação). |
-| **4. Setor** | Hospitalidade e Turismo: Pousadas de Charme, Pousadas de Praia e Ecoturismo, Hotéis Fazenda, Hotéis Urbanos Independentes (sem bandeira multinacional), Flats e Chalés de Temporada. |
-| **5. Formação** | Administração de Empresas, Hotelaria, Turismo, ou Empreendedores de outros setores que investiram no turismo como projeto de vida ou renda patrimonial. |
-| **6. Objetivos** | **1.** Reduzir drasticamente a fatura mensal do Booking.com/Airbnb (cortar de 40% a 70% das comissões pagas).<br>**2.** Ter um site rápido e impecável no celular que passe máxima segurança ao viajante.<br>**3.** Fazer o hotel ranquear nas primeiras posições do Google e Google Hotels para sua cidade.<br>**4.** Aumentar o faturamento na baixa temporada através de pacotes próprios e base de hóspedes fiéis.<br>**5.** Qualificar e agilizar os atendimentos da recepção no WhatsApp. |
-| **7. Dores** | **1.** Sentimento de revolta ao pagar R$ 5.000 a R$ 25.000 todo mês de comissão para o Booking enquanto arca sozinho com custos fixos e impostos.<br>**2.** Saber que o cliente visitou o site do hotel, mas voltou para o Booking para reservar porque o site era lento, confuso ou não inspirava confiança.<br>**3.** Site atual em WordPress antigo, cheio de plugins desatualizados, lento no celular e impossível de mexer sem um sobrinho/freelancer.<br>**4.** Equipe de atendimento sobrecarregada com dezenas de mensagens desconexas no WhatsApp sem informações de datas ou número de pessoas.<br>**5.** Trauma de agências de marketing que cobram mensalidades caras de R$ 1.500 a R$ 3.000/mês e só entregam posts de "bom dia" no Instagram sem reservas diretas. |
-| **8. Necessidades** | **1.** Entrega rápida e completa "chave na mão": site no ar em até 10 dias úteis pronto para vender.<br>**2.** Tecnologia WhatsApp Capture com formulário prévio inteligente para qualificar leads.<br>**3.** Motor de reservas com calendário direto sem taxa por hóspede.<br>**4.** Painel administrativo simples onde o próprio recepcionista altera preços e fotos em 2 cliques.<br>**5.** Modelo de investimento transparente com pagamento único e sem mensalidades abusivas. |
-| **9. Tópicos de Interesse** | Desintermediação hoteleira e táticas anti-Booking, Revenue Management e tarifa flutuante, automação de WhatsApp para recepção, fotografia de hospitalidade e valorização de acomodações, tendências do turismo 2026, Google Hotels e tráfego pago local para turismo. |
+| **1. Faixa Etária** | **38 a 65 anos** (forte concentração entre 45 e 60 anos). Empreendedor tradicional, focado no dia a dia da pousada física, muitas vezes com pouca intimidade com tecnologias complexas. |
+| **2. Profissão** | Donos de pousadas familiares, proprietários de chalés, sítios turísticos, pousadas rurais, pequenos hotéis de beira de estrada/cidade e pousadas de praia. |
+| **3. Cargos Decisores** | **1. Proprietário / Dono da Hospedagem** (decide tudo sozinho ou com o cônjuge).<br>**2. Administrador Familiar / Filho(a) que ajuda na gestão** (frequentemente quem incentiva os pais a colocar o negócio na internet). |
+| **4. Setor** | Hospitalidade e Turismo Local: Pousadas Familiares, Chalés de Montanha, Hotéis Fazenda Tradicionais, Pousadas Rurais, Camping Estruturado e Hotéis Urbanos Familiares que hoje só operam no balcão e no boca a boca. |
+| **5. Formação** | Autodidatas no turismo, comerciantes locais, aposentados que investiram no sonho da pousada própria, ou famílias tradicionais da região turística. |
+| **6. Objetivos** | **1. Ter presença oficial na internet:** Um site profissional com nome próprio (`pousadax.com.br`) para passar credibilidade.<br>**2. Ser encontrado no Google:** Aparecer quando os turistas pesquisam hospedagem na cidade.<br>**3. Receber reservas pelo WhatsApp:** Facilitar o contato direto dos viajantes com fotos bonitas dos quartos.<br>**4. Não depender apenas de placa na estrada ou indicação:** Garantir hóspedes o ano todo pela internet.<br>**5. Ter tudo pronto sem estresse técnico:** Quer alguém de confiança que cuide de tudo (domínio, hospedagem, textos e fotos). |
+| **7. Dores** | **1. Invisibilidade total:** O turista planeja a viagem no celular, pesquisa pousadas na cidade e a pousada dele simplesmente NÃO aparece.<br>**2. Vergonha do próprio negócio:** Quando um cliente pede *"qual é o site de vocês para eu ver fotos?"*, ele tem que mandar 40 fotos soltas no WhatsApp ou dizer *"a gente não tem site ainda"*, perdendo a reserva para concorrentes com site.<br>**3. Medo de ser difícil e caro:** Acha que criar um site custa R$ 10.000 ou que vai precisar ficar digitando códigos e contratando agências caras.<br>**4. Experiências ruins no passado:** O "sobrinho" ou um curioso prometeu fazer o site, pegou dinheiro e sumiu, ou deixou uma página feia abandonada.<br>**5. Ocupação baixa em dias de semana:** A pousada fica vazia fora de feriados porque ninguém de fora da cidade sabe que ela existe. |
+| **8. Necessidades** | **1. Solução Chave na Mão (Turnkey):** O cliente só manda as fotos e informações pelo WhatsApp, e a equipe do Meu Hotel Online entrega o site 100% pronto no ar.<br>**2. Preço acessível e pagamento facilitado:** Investimento único e justo, sem pegadinhas nem mensalidades eternas.<br>**3. Botão direto para WhatsApp:** Conexão instantânea para a pousada atender o cliente do jeito que ela já sabe fazer.<br>**4. Rápido:** No ar em até 5 a 7 dias úteis.<br>**5. Segurança e Credibilidade:** Site com cadeado SSL verde e fotos organizadas das suítes. |
+| **9. Tópicos de Interesse** | Como divulgar pousada na internet, como cadastrar pousada no Google Maps, fotos para quartos de pousada, atrair turistas para a cidade, atendimento no WhatsApp para reservas, pacotes para feriados. |
 
 ---
 
-## 🧠 2. Perfil Psicográfico & Comportamental
+## 🧠 2. Perfil Psicográfico & Decisão de Compra
 
 ### 2.1 Critérios de Decisão de Compra
-1. **Velocidade de Retorno do Investimento (Payback Rápido):**
-   - *Modelo Mental Aplicado:* **Ancoragem & Aversão à Perda (Loss Aversion).** Se o hotel economiza 18% em 5 diárias, o site de R$ 2.970 já se paga integralmente no primeiro mês.
-2. **Simplicidade e Independência:**
-   - O hoteleiro não quer virar programador. Ele compra quando percebe que a plataforma é limpa e intuitiva (Cloudbeds style).
-3. **Prova Social do Mesmo Nicho:**
-   - Não adianta mostrar cases de e-commerce ou consultórios; ele quer ver depoimentos de donos de pousadas e hotéis com os mesmos desafios operacionais.
+1. **Confiança e Atendimento Humanizado:**
+   - Este perfil não compra de robôs nem de ferramentas DIY (como Wix ou WordPress puro) porque ele não quer ter o trabalho de montar o site. Ele quer falar com um especialista no WhatsApp que passe segurança e faça tudo por ele.
+2. **Preço Fechado e Transparente (Sem Mensalidades Surpresa):**
+   - Ele tem medo de "assinar um serviço" que vai ficar cobrando todo mês. O apelo de **"Pagamento único pelo projeto, o site é seu"** elimina 90% da resistência.
+3. **Simplicidade Absoluta:**
+   - A promessa de que ele não precisa entender nada de internet: *"Você nos manda as fotos no WhatsApp, nós colocamos seu hotel online."*
 
-### 2.2 Consciência do Problema (Schwartz Framework)
-- **ICP Real (Problem-Aware & Solution-Seeking):**
-  - Já sabe exatamente quanto perde de comissão para o Booking todo dia 05 do mês. Está procurando ativamente *"como fazer reservas diretas"* ou *"criar site para hotel com motor de reservas"*.
-  - *Gatilho de Conversão:* Headline direta sobre parar de pagar comissão e demonstração do WhatsApp Capture.
-- **ICP Aspiracional (Unaware to Problem-Aware):**
-  - Acha que o Booking é "um mal necessário" e que ter site é perfumaria.
-  - *Gatilho de Conversão:* Calculadora de comissões retidas e demonstração do hóspede que entra no site pelo Google e abandona por falta de segurança.
+### 2.2 Níveis de Consciência (Schwartz)
+- **Unaware / Problem Aware:**
+  - Sabe que a pousada podia estar faturando mais, mas acha que "internet é só para hotel grande".
+  - *Gatilho:* Mostrar que hoje **92% dos viajantes pesquisam no Google antes de escolher uma pousada**. Quem não está na internet é invisível para quem vem de fora.
+- **Solution Aware:**
+  - Já sabe que precisa de um site urgente, mas estava adiando por falta de tempo ou medo do preço.
+  - *Gatilho:* *"Seu hotel na internet em 5 dias úteis por um investimento que cabe no seu bolso."*
 
 ### 2.3 Objeções Mapeadas & Respostas Estratégicas
 
 | Objeção Comum | Modelo Mental | Resposta Estratégica na Copy |
 | :--- | :--- | :--- |
-| *"Já estou no Booking e tenho reservas, por que preciso de site?"* | **Status Quo Bias** | O Booking fica com de 18% a 25% de cada diária. Em 1 ano, você paga mais de R$ 50.000 para eles. Um site próprio permite reter essa margem no seu bolso e fidelizar o hóspede. |
-| *"Tenho medo de ser difícil de atualizar as tarifas e fotos."* | **Cognitive Friction** | Mostramos em vídeo o painel simples: alterar uma tarifa leva 15 segundos. Além disso, entregamos treinamento gravado para toda a sua equipe. |
-| *"E se não integrar com meu sistema/PMS atual?"* | **Risk Aversion** | Nosso sistema é agnóstico e integra nativamente com os principais motores e Channel Managers do Brasil (Cloudbeds, Hospedin, Omnibees, etc.). |
-| *"Vou ter que pagar mensalidade para sempre?"* | **Loss Aversion** | Não! O pagamento é único pelo projeto e o site é 100% de sua propriedade. Zero taxa sobre reservas e zero fidelidade. |
-
-### 2.4 Canais de Aquisição & Mix de Mídia Sugerido
-- **Google Search (45% do budget):** Palavras-chave de fundo de funil com alta intenção comercial (`"criação de sites para hoteis"`, `"site para pousada com motor de reservas"`, `"sistema de reservas diretas hotel"`).
-- **Meta Ads — Instagram & Facebook (35% do budget):** Anúncios em carrossel e vídeo voltados a proprietários de pousadas e hotéis com foco na dor da comissão do Booking e demonstrando o WhatsApp Capture na tela.
-- **Google Maps & Scraping B2B (20% do budget):** Prospecção ativa de pousadas com sites desatualizados ou sem site via esteira comercial própria.
+| *"Eu não entendo nada de computador, vai ser difícil para mim?"* | **Cognitive Overload** | Você não precisa mexer em nada! Nós fazemos tudo por você: registramos o endereço, colocamos suas fotos e organizamos tudo. O site entrega os clientes direto no seu WhatsApp. |
+| *"Já tenho Instagram / Facebook, preciso de site?"* | **Narrow Framing** | O Instagram é bom, mas o turista pesquisa no Google: "pousada em [cidade]". Além disso, o site passa a credibilidade de um negócio formal e seguro contra golpes. |
+| *"É muito caro criar um site para pousada?"* | **Price Anchoring** | Custa muito menos do que 1 fim de semana de quartos vazios. Com apenas R$ 1.890 (ou 12x de R$ 189), seu hotel tem um site oficial para sempre. |
+| *"Vou ter que pagar mensalidade para agência?"* | **Loss Aversion** | Não! O pagamento é único. Sem taxas ocultas, sem comissões sobre seus hóspedes. O site é 100% seu. |
 
 ---
 
-## 🎯 3. ICP Real vs. ICP Aspiracional (Filtro de Qualificação)
+## 🎯 3. ICP Real vs. ICP Aspiracional
 
-| Critério de Qualificação | ✅ ICP Real (SQL Qualificado) | ❌ ICP Aspiracional (Desqualificado / Baixo Ticket) |
+| Critério de Qualificação | ✅ ICP Real (Hotel/Pousada sem Presença Online) | ❌ Fora do Foco |
 | :--- | :--- | :--- |
-| **Porte da Hospedagem** | De 5 a 60 acomodações (Pousadas médias, hotéis independentes e hotéis fazenda com operação ativa). | Quarto único no Airbnb ou camping informal sem CNPJ. |
-| **Faturamento Mensal Estimado** | R$ 25.000 a R$ 250.000/mês. | Menos de R$ 10.000/mês (sem verba para investimento estrutural). |
-| **Dependência Atual** | Vende pelo menos 40% a 80% via Booking/Airbnb e sofre com a mordida das taxas. | Não recebe turistas, não está em nenhum canal ou depende 100% de permuta. |
-| **Equipe / Recepção** | Tem pelo menos 1 pessoa responsável por responder WhatsApp e reservas. | O dono atende esporadicamente quando lembra de olhar o telefone. |
-| **Pergunta Típica no Contato** | *"Como funciona a integração com o WhatsApp e motor para eu parar de dar 20% pro Booking?"* | *"Dá para fazer de graça ou pagar depois que eu tiver 50 reservas?"* |
-| **Ação Comercial** | → Direcionar para consultoria imediata de demonstração do WhatsApp Capture e fechamento do Plano Pro/Alta Conversão. | → Nutrir com materiais educativos e ebook antes de gastar tempo comercial. |
+| **Situação Atual** | Não possui site próprio, site fora do ar há anos, ou depende 100% de telefone/WhatsApp informal e placa na rua. | Redes multinacionais de hotéis com equipe própria de TI ou agência contratada. |
+| **Estrutura Física** | Pousada, chalé, hotel fazenda ou hotel familiar com de 3 a 40 acomodações reais. | Pessoas que só alugam 1 colchão avulso sem estrutura hoteleira. |
+| **Decisor** | O próprio dono ou o filho/gerente que cuida da administração. | Funcionário sem autonomia financeira que precisa de aprovação de 5 comitês. |
+| **Desejo Central** | *"Quero ter um site bonito para mandar pros clientes e ser achado no Google."* | *"Quero um sistema complexo de microserviços com API bancária multinacional."* |
+| **Ação Comercial** | → Apresentar o plano de colocar a pousada online em 5 dias e fechar pelo WhatsApp. | → Desqualificar educadamente. |
 
 ---
 
-## 💡 4. Modelos Mentais Aplicados à Estratégia de Conversão
+## 💡 4. Modelos Mentais Aplicados à Copy
 
-1. **Loss Aversion (Aversão à Perda - Kahneman & Tversky):**
-   - *Aplicação na Copy:* A dor de perder R$ 15.000 por ano em comissões é 2.5x mais potente do que o prazer de ganhar novos clientes. A comunicação sempre ancora o dinheiro que está escorrendo pelo ralo hoje.
-2. **Social Proof & Authority (Cialdini):**
-   - *Aplicação na Copy:* Selos de +400 clientes, +20 anos de mercado, Google Partner e depoimentos de proprietários reais de cidades turísticas (Paraty, Campos do Jordão, Gramado, Maresias).
-3. **Contrast Principle (Princípio do Contraste):**
-   - *Aplicação na Copy:* Comparar o investimento único de R$ 2.970 do site com o custo perpétuo de R$ 3.000/MÊS que o hotel já paga ao Booking de comissão.
-4. **Jobs to be Done (Clayton Christensen):**
-   - *O "Job" do Hoteleiro:* O hoteleiro não quer comprar "linhas de código HTML ou um tema de site". O trabalho que ele contrata é: **"Paz de espírito no final do mês ao ver o faturamento entrar direto no seu banco sem terceiros mordendo sua margem."**
+1. **Status & Orgulho Profissional (Ego Labeling):**
+   - Ter um site com nome próprio (`pousadasol.com.br`) transforma a percepção do negócio de "quartos para alugar" em uma **Hospedagem Oficial e Confiável**. O proprietário sente orgulho de compartilhar seu link.
+2. **Social Proof Local (Prova Social):**
+   - *"Mais de 400 pousadas e hotéis familiares em todo o Brasil já saíram do anonimato e hoje recebem hóspedes pela internet com a nossa plataforma."*
+3. **Loss Aversion (A Dor do Invisível):**
+   - Toda semana, famílias inteiras viajam para a sua cidade, procuram onde ficar no Google e reservam na pousada vizinha simplesmente porque a sua não apareceu na pesquisa.
+4. **Relief & Simplicity (Alívio Cognitivo):**
+   - Nós tiramos todo o peso técnico das costas do hoteleiro. Chave na mão.
