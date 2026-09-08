@@ -1,0 +1,226 @@
+/* ================================================================
+   MeuHotelOnline.com.br — Luxury Emerald Design System
+   Inspirado no estilo Web Design Brasil (Dark Luxury Emerald),
+   com toques de alta conversão de HotelariaWeb e Cloudbeds.
+   ================================================================ */
+
+:root {
+  --primary-emerald: #22c55e;
+  --primary-emerald-hover: #16a34a;
+  --primary-emerald-dark: #15803d;
+  --bg-deep-forest: #0c1a12;
+  --bg-dark-emerald: #142a1d;
+  --bg-card: rgba(20, 42, 29, 0.7);
+  --border-emerald: rgba(34, 197, 94, 0.18);
+  --border-emerald-glow: rgba(34, 197, 94, 0.4);
+  --accent-gold: #facc15;
+  --accent-gold-glow: rgba(250, 204, 21, 0.25);
+  --text-muted: #94a3b8;
+  --text-light: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  background-color: var(--bg-deep-forest);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Efeito sutil de background radial / glow */
+.bg-glow-radial {
+  background: radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.15) 0%, rgba(12, 26, 18, 0) 65%);
+}
+
+.bg-glow-radial-bottom {
+  background: radial-gradient(circle at 50% 100%, rgba(34, 197, 94, 0.12) 0%, rgba(12, 26, 18, 0) 70%);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(18, 36, 26, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-emerald);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--border-emerald-glow);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -15px rgba(34, 197, 94, 0.15);
+}
+
+.glass-card-gold {
+  background: rgba(26, 36, 22, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(250, 204, 21, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(250, 204, 21, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-card-gold:hover {
+  border-color: rgba(250, 204, 21, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -15px rgba(250, 204, 21, 0.2);
+}
+
+/* Header Shine Animation */
+@keyframes header-shine {
+  0% { left: -40%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+.header-glow-line::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -40%;
+  width: 40%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.6), transparent);
+  animation: header-shine 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Botão Dourado Pulsante (Estilo WDB) */
+.btn-gold-pulse {
+  position: relative;
+  background: linear-gradient(135deg, rgba(250, 204, 21, 0.12), rgba(250, 204, 21, 0.04));
+  border: 1px solid rgba(250, 204, 21, 0.35);
+  color: #ffffff;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.btn-gold-pulse:hover {
+  background: linear-gradient(135deg, rgba(250, 204, 21, 0.25), rgba(250, 204, 21, 0.1));
+  border-color: rgba(250, 204, 21, 0.7);
+  box-shadow: 0 0 25px rgba(250, 204, 21, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-gold-pulse::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #facc15, transparent);
+}
+
+/* Botão Emerald Principal com Efeito Brilho */
+.btn-emerald {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-emerald:hover {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  box-shadow: 0 6px 30px rgba(34, 197, 94, 0.55);
+  transform: translateY(-2px);
+}
+
+/* Gift Wobble Animation */
+@keyframes gift-wobble {
+  0%, 80%, 100% { transform: rotate(0deg) translateY(0); }
+  85% { transform: rotate(-8deg) translateY(-2px); }
+  90% { transform: rotate(8deg) translateY(-2px); }
+  95% { transform: rotate(-4deg) translateY(-1px); }
+}
+
+.animate-gift {
+  animation: gift-wobble 3.5s ease-in-out infinite;
+}
+
+/* Pulse Glow dot */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Floating Card Animation */
+@keyframes float-card {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float-card 5s ease-in-out infinite;
+}
+
+/* Marquee / Logos Slider Contínuo */
+.marquee-wrapper {
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  gap: 2rem;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 2rem;
+  animation: scroll-left 35s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - 2rem)); }
+}
+
+/* Modal Transitions */
+.modal-overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content-box {
+  transform: scale(0.95) translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-content-box {
+  transform: scale(1) translateY(0);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep-forest);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(34, 197, 94, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 197, 94, 0.6);
+}
