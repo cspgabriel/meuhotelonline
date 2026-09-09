@@ -6,4 +6,3 @@ fs.writeFileSync(path.join(out,'_headers'),'/demo/*\n  X-Robots-Tag: noindex\n  
 const sha=require('node:child_process').execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
 fs.writeFileSync(path.join(out,'demo','release.json'),JSON.stringify({sha,builtAt:new Date().toISOString(),scope:'demo site + manutencao mensal'},null,2));
 console.log('Build estático: home + assets + mkt + demo. Documentação operacional excluída.');
-

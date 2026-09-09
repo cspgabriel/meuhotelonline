@@ -16,3 +16,11 @@ Chrome real via Playwright CLI. 60 verificações aprovadas nas páginas e 5 no 
 Evidências locais: `D:/operations/meuhotelonline-mvp-20260909/qa-local.json`, `qa-plano.json` e capturas `local-*.png`.
 
 QA público e SHA final serão registrados nas issues meuhotelonline#1 e central#132 após deploy.
+
+## QA público
+
+As mesmas 60 verificações passaram em https://hoteis.criacaodesitesbr.com, incluindo desktop, tablet e mobile, imagens, acessibilidade automatizada e interações. Nenhum erro JavaScript capturado. Mensagem comercial não enviada; teste de clipboard aguarda o resultado assíncrono.
+
+Deploy inicialmente validado: 59d3154f-4d30-494a-a519-ba6aa2ef6e62. A home e 3 assets preexistentes foram comparados com a origem estática publicada (texto normalizado por quebra de linha e imagem por bytes). Publicação final inclui a identificação do commit no provedor e no `/demo/release.json`; evidência final e SHA registrados nas issues.
+
+O plano HTML está fora do build público, com cálculo de recorrência/implantação validado. Fotos ilustrativas dependem de disponibilidade da CDN Unsplash. A demo não inclui CRM, cobrança, reserva real ou consulta de inventário.

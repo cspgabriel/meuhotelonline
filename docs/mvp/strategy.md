@@ -67,5 +67,4 @@ Identidade nova derivada da referência: verde floresta #173d33; verde CTA #215b
 - [x] Estratégia e wireframe definidos segundo o escopo autorizado.
 - [x] Implementar páginas e plano operacional.
 - [x] QA local desktop/mobile, casos válidos e inválidos: 60 verificações + 5 no plano.
-- [ ] Commit, deploy aditivo, QA público e fechamento dos quadros.
-
+- [x] Commit e deploy aditivo; QA público com 60 verificações aprovado. Registro final e próximo passo nas issues local #1 e central #132.
