@@ -67,3 +67,14 @@ npx wrangler pages deploy . --project-name=meuhotelonline --branch=main --commit
 Para alterar o número de WhatsApp padrão que recebe os orçamentos:
 1. Abra `assets/js/main.js`.
 2. Altere a constante `CONFIG.WHATSAPP_DEFAULT_PHONE` para o número desejado (com DDI e DDD, ex: `5521997316583`).
+
+## Demo MVP — site + manutenção (09/09/2026)
+
+- Página comercial: `/demo/`.
+- Pousada fictícia navegável: `/demo/pousada/`.
+- Proposta de preço em validação: R$ 1.990 de implantação + R$ 397/mês após publicação.
+- Plano, simulador de faturamento e estratégia: `docs/mvp/`. A documentação operacional não entra no build do site.
+- O modelo gera uma simulação de cotação; não consulta inventário nem confirma reservas. O formulário comercial prepara o link para o WhatsApp configurado, sem envio automático nem armazenamento.
+- Construir: `node scripts/build-demo.cjs`. Publicar `dist` no projeto Cloudflare Pages `meuhotelonline`, conta comercial `8c4f3b0ccc2ee9001b6dd8322b8b6ca9`.
+- A home, os assets e o material mkt preexistentes são preservados. Não executar `wrangler pages deploy .`, pois isso exporia documentação operacional.
+- Conferir `demo/release.json` no deploy para identificar o SHA. URLs de demo têm `noindex`.

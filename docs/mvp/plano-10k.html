@@ -1,0 +1,259 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Plano de R$ 10 mil/mês — Meu Hotel Online</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f5ef;color:#213c30;font:16px/1.65 Arial,sans-serif}main{max-width:1050px;margin:auto;padding:44px 24px}h1,h2{font-family:Georgia,serif;line-height:1.15;letter-spacing:-.03em}h1{font-size:45px}h2{font-size:30px;margin-top:50px}h3{margin-top:32px}a{color:#215b45}table{border-collapse:collapse;width:100%;font-size:14px;margin:22px 0}th,td{text-align:left;padding:12px;border-bottom:1px solid #c9d5ca}th{background:#e7ecdf}pre,code{white-space:pre-wrap;overflow-wrap:anywhere}blockquote{border-left:3px solid #215b45;padding:12px 20px;margin:20px 0;background:white}.calc{padding:27px;background:#173d33;color:white;border-radius:15px;margin:25px 0}.inputs,.results{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}label{display:block;font-size:13px}input{width:100%;padding:10px;margin-top:7px;font:inherit}output{font-size:26px;font-family:Georgia;display:block}.results{margin-top:25px}.results p{margin:0;font-size:12px}.calc h2{margin:0 0 15px;color:white}.calc small{display:block;margin-top:17px;color:#d3dec9}:focus-visible{outline:3px solid #c99c24;outline-offset:4px}@media(max-width:650px){h1{font-size:34px}.inputs,.results{grid-template-columns:1fr}table{display:block;overflow-x:auto}main{padding:25px 18px}}@media print{body{background:white}main{padding:0}table{font-size:10px}h2{break-after:avoid}.calc{display:none}a{color:inherit}}</style></head><body><main><section class="calc" aria-label="Simulador de faturamento"><h2>Simule sua operação</h2><p>Hipóteses editáveis. Receita bruta, sem custos e sem garantia de vendas.</p><div class="inputs"><label>Clientes de manutenção ativos<input id="clients" type="number" min="0" max="1000" step="1" value="26"></label><label>Mensalidade por cliente (R$)<input id="monthly" type="number" min="1" max="10000" step="1" value="397"></label><label>Implantações entregues no mês<input id="setups" type="number" min="0" max="100" step="1" value="4"></label></div><div class="results" aria-live="polite"><div><p>Receita mensal recorrente</p><output id="mrr"></output></div><div><p>Total com implantação a R$ 1.990</p><output id="total"></output></div><div><p>Clientes para R$ 10 mil recorrentes</p><output id="needed"></output></div></div><small>Mensalidades só entram após publicação/ativação; implantações não são receita recorrente. Não representa o calendário de recebimentos.</small></section><script>const money=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});function calculate(){const fields=['clients','monthly','setups'].map(id=>document.getElementById(id));if(fields.some(f=>!f.checkValidity()||f.value==='')){for(const id of ['mrr','total','needed'])document.getElementById(id).textContent='Revise os valores';return}const[c,m,s]=fields.map(f=>Number(f.value));document.getElementById('mrr').textContent=money(c*m);document.getElementById('total').textContent=money(c*m+s*1990);document.getElementById('needed').textContent=Math.ceil(10000/m)+' clientes'}document.querySelectorAll('input').forEach(i=>i.addEventListener('input',calculate));calculate();</script><h1>Plano prático — Meu Hotel Online até R$ 10 mil/mês</h1>
+<p>Data: 09/09/2026. Escopo confirmado: <strong>site + manutenção mensal</strong>. Valores, conversões, custos e prazos abaixo são hipóteses para validação; não representam contratos ou resultados existentes.</p>
+<h2>A decisão comercial</h2>
+<p>Vender uma única oferta padronizada: <strong>R$ 1.990 pela implantação + R$ 397/mês depois da publicação</strong>. Mensalidade com valor operacional real e trabalho limitado, não apenas hospedagem. Público inicial: dono/gerente de pousadas e pequenos hotéis independentes, prioritariamente RJ, sem site adequado, que atendem por WhatsApp e têm fotos autorizadas.</p>
+<p>A página atual vende projetos avulsos e promete ausência de mensalidade. Não migrar clientes nem mudar contratos antigos automaticamente. A demo /demo/ apresenta uma modalidade nova, com preços propostos. Confirmar preço e escopo no documento enviado ao interessado antes de contratar. Desconto deve reduzir escopo; não prometer serviço ilimitado.</p>
+<h2>O MVP que vendemos e conseguimos entregar</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Incluído / limite</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Site</td>
+<td>Uma página principal baseada em modelo, até 6 categorias de acomodação, galeria de até 24 fotos, comodidades, localização real, contato e FAQ/políticas fornecidas pelo hotel</td>
+</tr>
+<tr>
+<td>Conversão</td>
+<td>Pedido de cotação com categoria, datas e total de hóspedes; mensagem preparada para o WhatsApp real da recepção</td>
+</tr>
+<tr>
+<td>Publicação</td>
+<td>Cloudflare Pages, HTTPS, domínio do próprio cliente, títulos e descrição, orientação para atualizar o link do site no Perfil da Empresa do Google se houver acesso autorizado</td>
+</tr>
+<tr>
+<td>Implantação</td>
+<td>Até 8 horas internas, uma rodada de revisão, prazo proposto até 7 dias úteis após materiais completos</td>
+</tr>
+<tr>
+<td>Manutenção</td>
+<td>Hospedagem, cópia versionada dos arquivos, verificação mensal de páginas/links, até 2 solicitações simples e 1 hora total/mês, sem acumulação</td>
+</tr>
+<tr>
+<td>Atendimento</td>
+<td>Canal comercial, retorno inicial proposto em até 2 dias úteis; conclusão de alterações segundo escopo; sem plantão 24/7</td>
+</tr>
+<tr>
+<td>Saída</td>
+<td>Aviso proposto de 30 dias; domínio em nome do hotel; arquivos disponíveis após implantação quitada; nova hospedagem e serviços externos por conta do cliente</td>
+</tr>
+</tbody></table>
+<p><strong>Não incluído:</strong> tráfego pago, postagem em redes sociais, fotografia, gestão diária do Google, e-mail corporativo, edição ilimitada, PMS, channel manager, motor de reservas, pagamento online, sincronização com Booking/OTAs, atendimento aos hóspedes. Não vender disponibilidade em tempo real onde só existe cotação. Extras apenas com escopo separado.</p>
+<p><strong>Fluxo de entrega:</strong> contrato/escopo → 50% (R$ 995) na contratação → checklist de materiais → produção → uma revisão → saldo de R$ 995 na aprovação → publicação → mensalidade iniciada. Sem checkout/cobrança automática nesta demo. Cancelamento e demais condições serão formalizados no contrato da operação.</p>
+<h2>Duas metas diferentes</h2>
+<table>
+<thead>
+<tr>
+<th>Meta</th>
+<th>Conta</th>
+<th>Interpretação</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Superar R$ 10 mil de faturamento no mês</td>
+<td>4 implantações entregues × R$ 1.990 + 6 mensalidades ativas × R$ 397 = <strong>R$ 10.342</strong></td>
+<td>Receita mista; depende de vender e entregar novos sites naquele mês. As 6 mensalidades precisam existir e estar em cobrança.</td>
+</tr>
+<tr>
+<td>Superar R$ 10 mil recorrentes</td>
+<td>26 clientes ativos × R$ 397 = <strong>R$ 10.322/mês</strong></td>
+<td>Mensalidades, excluindo implantação; não é lucro.</td>
+</tr>
+<tr>
+<td>Começar do zero com 4 entregas no mês 1</td>
+<td>4 × R$ 1.990 + 4 × R$ 397 = <strong>R$ 9.548</strong></td>
+<td>Teto do cenário se os 4 publicarem e pagarem a primeira mensalidade nesse mês; se só os sinais forem recebidos, caixa é R$ 3.980.</td>
+</tr>
+<tr>
+<td>Mês 2 com 4 novas entregas e 8 ativos</td>
+<td>4 × R$ 1.990 + 8 × R$ 397 = <strong>R$ 11.136</strong></td>
+<td>Possível atingir faturamento misto antes da meta recorrente.</td>
+</tr>
+</tbody></table>
+<p>Recebimento em caixa depende do calendário, aprovação, parcelamento, cancelamentos e inadimplência. Não contar sinal como receita mensal recorrente. A proposta não promete atingir a meta em data certa.</p>
+<h3>Trajetória de trabalho com 4 novos clientes por mês</h3>
+<table>
+<thead>
+<tr>
+<th>Mês</th>
+<th align="right">Novos</th>
+<th align="right">Saídas no mês (hipótese)</th>
+<th align="right">Ativos ao final</th>
+<th align="right">MRR ao final</th>
+<th align="right">Implantações + MRR*</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">R$ 1.588</td>
+<td align="right">R$ 9.548</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">8</td>
+<td align="right">R$ 3.176</td>
+<td align="right">R$ 11.136</td>
+</tr>
+<tr>
+<td>3</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">12</td>
+<td align="right">R$ 4.764</td>
+<td align="right">R$ 12.724</td>
+</tr>
+<tr>
+<td>4</td>
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">15</td>
+<td align="right">R$ 5.955</td>
+<td align="right">R$ 13.915</td>
+</tr>
+<tr>
+<td>5</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">19</td>
+<td align="right">R$ 7.543</td>
+<td align="right">R$ 15.503</td>
+</tr>
+<tr>
+<td>6</td>
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">R$ 8.734</td>
+<td align="right">R$ 16.694</td>
+</tr>
+<tr>
+<td>7</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">26</td>
+<td align="right">R$ 10.322</td>
+<td align="right">R$ 18.282</td>
+</tr>
+</tbody></table>
+<p>*Potencial simplificado com todas as novas entregas e mensalidades cobradas integralmente. Sem pró-rata e sem representar fluxo de caixa real. Duas saídas são hipótese de planejamento, não taxa de churn medida. A 2 novos/mês e sem perdas, 26 ativos exigem 13 meses; a 6/mês, 5 meses, mas aumenta a carga de entrega. Para preservar 26 ativos, substituir cada cliente perdido.</p>
+<h2>Economia por cliente e capacidade</h2>
+<p>Hipóteses internas, a medir nos 3 primeiros projetos:</p>
+<ul>
+<li>Implantação: 8 horas × R$ 70/h = R$ 560 de trabalho. Preço R$ 1.990 menos esse custo = R$ 1.430 antes de aquisição, tributos, taxas e retrabalho.</li>
+<li>Manutenção: R$ 397 menos R$ 70 de trabalho (1h), R$ 25 de rateio de infraestrutura/ferramentas e R$ 39,70 de reserva gerencial para tributos/taxas = <strong>R$ 262,30 de contribuição por cliente</strong>. Reserva de 10% não é alíquota tributária; substituir pelo custo real validado na contabilidade.</li>
+<li>Com 26 ativos: R$ 10.322 de receita recorrente; R$ 1.820 de trabalho; R$ 650 de infraestrutura/ferramentas; R$ 1.032,20 de reserva; R$ 6.819,80 de contribuição. Menos R$ 600 estimados de despesas fixas = <strong>R$ 6.219,80</strong>, ainda antes do trabalho comercial/administrativo, outros custos e retiradas não incluídos. Não apresentar isso como lucro líquido.</li>
+<li>Aquisição inicial proposta: 40 horas de prospecção/vendas por mês × R$ 70/h + R$ 300 de ferramentas = R$ 3.100 de custo econômico. Com 4 contratos, <strong>CAC hipotético R$ 775</strong>. Desembolso adicional de ferramentas R$ 300; o tempo tem custo mesmo sendo do proprietário.</li>
+<li>Capacidade com 26 ativos e 4 novas implantações/mês: 26h manutenção + 32h produção + 40h comercial + 10h administração = <strong>108h/mês</strong>, antes de incidentes e retrabalho. Reservar 20h de folga operacional. Ao superar 1h/cliente/mês ou 8h de implantação, corrigir escopo/preço antes de aumentar vendas.</li>
+<li>Domínio e produtos pagos de terceiros por conta do cliente. R$ 25 é rateio proposto, não cotação de fornecedor. Não há contratação de ferramentas, mídia ou serviços neste trabalho.</li>
+</ul>
+<h2>Aquisição: uma lista pequena, trabalhada todos os dias</h2>
+<p><strong>Foco inicial proposto:</strong> Teresópolis/Petrópolis e Região dos Lagos. Selecionar um único destino na primeira quinzena para reaproveitar contexto, aprender objeções e montar referências locais. Não alegar parceria com associações sem autorização.</p>
+<p><strong>Fontes:</strong> consultar meios de hospedagem no Cadastur e confirmar nome, site e contato comercial nos canais do estabelecimento. O Ministério do Turismo disponibiliza consulta/dados de prestadores; um registro público não equivale a autorização de marketing. O Google documenta a manutenção de informações e links de hotéis; orientação sobre Perfil da Empresa depende de acesso autorizado. Não prometer ranking nem confundir link do site com integração de tarifas/hotel ads.</p>
+<p>Fontes oficiais consultadas em 09/09/2026:</p>
+<ul>
+<li><a href="https://www.gov.br/turismo/pt-br/acesso-a-informacao/acoes-e-programas/cadastur/cadastur">Cadastur — Ministério do Turismo</a></li>
+<li><a href="https://dados.turismo.gov.br/pt_BR/dataset/meios-de-hospedagem">Dados abertos de meios de hospedagem</a></li>
+<li><a href="https://support.google.com/business/answer/9177958?hl=en-GB">Gerenciar detalhes de hotéis — Google</a></li>
+</ul>
+<p><strong>Critério de entrada:</strong> operação ativa, 5–40 acomodações como hipótese de porte, fotos próprias disponíveis, site ausente/desatualizado, recepção ativa e canal empresarial público. Confirmar porte com o decisor, sem inferir do nome. Priorizar indicação e relacionamento existente. Excluir quem recusou contato e registrar descadastro. Não disparar listas nem importar bases institucionais de outra finalidade.</p>
+<h3>Funil mensal inicial (hipótese, não benchmark)</h3>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th align="right">Meta mensal</th>
+<th align="right">Conversão hipotética</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Abordagens iniciais individuais e pertinentes</td>
+<td align="right">400</td>
+<td align="right">20/dia × 20 dias úteis</td>
+</tr>
+<tr>
+<td>Conversas com resposta e aderência</td>
+<td align="right">60</td>
+<td align="right">15% das abordagens</td>
+</tr>
+<tr>
+<td>Demonstrações realizadas com decisor</td>
+<td align="right">20</td>
+<td align="right">33,3% das conversas</td>
+</tr>
+<tr>
+<td>Propostas solicitadas/enviadas</td>
+<td align="right">12</td>
+<td align="right">60% das demos</td>
+</tr>
+<tr>
+<td>Contratos pagos</td>
+<td align="right">4</td>
+<td align="right">33,3% das propostas; 1% do topo</td>
+</tr>
+</tbody></table>
+<p>Com conversão final de 0,5%, 400 contatos gerariam 2 contratos; seriam necessários 800 para 4, o que não justifica escalar automaticamente. Melhorar seleção e oferta antes de dobrar o volume. Não há contato externo autorizado ou enviado por esta entrega.</p>
+<p><strong>Rotina diária:</strong> 30 min selecionar e checar 20 oportunidades; 45 min de abordagens personalizadas; 30 min follow-ups combinados e CRM; reservar 15 min médios para demos/propostas ao longo da semana. A hipótese de 2h/dia pode ficar apertada: medir tempo real e reduzir volume se não permitir personalização. Nos dias de demo, redistribuir a agenda.</p>
+<h3>Texto inicial para revisar e usar individualmente</h3>
+<blockquote>
+<p>Olá, [nome]. Vi [observação real sobre o canal da hospedagem]. Trabalho com sites para pousadas e hotéis e preparei um modelo que mostra os quartos e organiza pedidos de cotação pelo WhatsApp. Faz sentido eu te mostrar em 10 minutos? A proposta que estamos validando é R$ 1.990 para criar + R$ 397/mês para manter o site.</p>
+</blockquote>
+<p>Não afirmar que o hotel perde reservas ou está sem site sem verificar. Se houver interesse, compartilhar a demo. Um retorno após 3 dias e outro após 7, apenas se pertinente e respeitando preferência/recusa; depois encerrar. Não executar envios automaticamente.</p>
+<h3>Roteiro da demonstração (10 minutos)</h3>
+<ol>
+<li>2 min: como o hóspede encontra vocês, onde vê os quartos, quem responde e o que está desatualizado?</li>
+<li>3 min: abrir /demo/pousada/, mostrar quarto e mensagem com datas. Deixar explícito: solicitação, não reserva confirmada.</li>
+<li>2 min: mostrar o que será personalizado com fotos e informações reais.</li>
+<li>2 min: apresentar R$ 1.990 + R$ 397, limites, prazo condicionado aos materiais e responsabilidades.</li>
+<li>1 min: confirmar decisor, data de início e permissão para enviar proposta. Registrar próximo passo com data.</li>
+</ol>
+<h3>Objeções e resposta concreta</h3>
+<table>
+<thead>
+<tr>
+<th>Objeção</th>
+<th>Resposta</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Já tenho Instagram/Booking</td>
+<td>Eles podem continuar. O site organiza as informações e o contato direto; não substitui os canais que funcionam.</td>
+</tr>
+<tr>
+<td>Por que pagar todo mês?</td>
+<td>Para ter hospedagem, verificação e pequenas atualizações com responsável. Mostrar limite e política de saída; sem serviço invisível.</td>
+</tr>
+<tr>
+<td>Vai trazer quantas reservas?</td>
+<td>Não há volume garantido. Medimos pedidos recebidos e origem declarada, e o hotel mede quantos viraram reserva.</td>
+</tr>
+<tr>
+<td>Não tenho fotos</td>
+<td>Enviar checklist de fotos próprias. Se não houver material suficiente, ajustar cronograma; fotografia não está incluída.</td>
+</tr>
+<tr>
+<td>Quero alterações ilimitadas</td>
+<td>Oferecer pacote extra com escopo; a mensalidade contempla até 2 solicitações e 1 hora total.</td>
+</tr>
+</tbody></table>
+<h2>Plano de 30 / 60 / 90 dias</h2>
+<p><strong>Dias 1–3:</strong> validar preço/contrato, destinatário WhatsApp e responsabilidades; testar demo no celular junto a 3 pessoas da hotelaria; montar checklist de fotos; cadastrar 40 oportunidades verificadas; definir uma região e blocos fixos de atendimento.</p>
+<p><strong>Dias 4–10:</strong> testar abordagem nas primeiras 60 oportunidades; buscar 6 conversas e 3 demos; registrar objeção literal, não só “sem interesse”; ajustar mensagem. Fechar primeiro cliente pagando, sem inventar case.</p>
+<p><strong>Dias 11–30:</strong> completar até 400 abordagens com qualidade, 20 demos e 12 propostas; objetivo 4 contratos pagos e entregas. Publicar o primeiro caso real com autorização e antes/depois verificável. Se menos de 2 contratos após 200 contatos qualificados, rever ICP, preço e diagnóstico antes de seguir com o lote.</p>
+<p><strong>Dias 31–60:</strong> repetir o processo, objetivo 8 clientes ativos; faturamento misto de referência R$ 11.136 no mês 2 condicionado às entregas. Pedir indicação depois da aprovação do site. Guardar apenas evidências autorizadas, reduzir implantação para até 8h e medir horas de suporte.</p>
+<p><strong>Dias 61–90:</strong> objetivo 12 ativos e R$ 4.764 de MRR; documentar operação de manutenção, conferir renovação e testar canal de indicação. Só avaliar anúncios depois de conhecer taxa de fechamento, tempo de entrega e CAC. Anúncios não são necessários para iniciar e não serão ligados neste MVP.</p>
+<p><strong>Meses 4–7:</strong> manter 4 novas entregas/mês e reposição de perdas até 26 ativos. Revisar preço ou capacidade se a manutenção ultrapassar o teto. Não ampliar escopo para automação/PMS antes de a oferta principal se sustentar.</p>
+<h2>CRM mínimo e revisão semanal</h2>
+<p>Arquivo-base: <code>pipeline-template.csv</code>. Campos: hotel, cidade, URL verificada, canal empresarial, origem, decisor, status, último contato, próximo passo, data, proposta, sinal recebido, data de publicação, manutenção ativa, horas do mês, motivo de perda/recusa. Não colocar contatos reais no repo público.</p>
+<p>Etapas: pesquisado → contato pertinente → respondeu → demo marcada → demo realizada → proposta → contratado/sinal → produção → publicado/manutenção → perdido/recusou. Todo item precisa de próximo passo. Entrada em MRR exige publicação e mensalidade contratada, não apenas proposta.</p>
+<p><strong>Toda sexta-feira:</strong> conferir contagens do funil, contratos pagos, caixa recebido, MRR ativo, custo de aquisição incluindo tempo, horas de implantação/manutenção, atrasos, pedidos de cancelamento e motivos. Registrar o gargalo principal e uma única mudança para a próxima semana.</p>
+<h2>Definição de pronto do MVP</h2>
+<p>Demo comercial e pousada fictícia navegáveis; cotação e briefing com validação; destinatário comercial consistente com configuração existente; visual desktop/375px; fotos carregadas; nenhum envio automático; nova rota publicada com commit verificável; plano de entrega, aquisição, preços, limites e manutenção documentados.</p>
+<p>Operação comercial seguinte: validar os valores com as primeiras conversas e executar manualmente a prospecção. Contratação, faturamento e manutenção de clientes reais não foram realizados por esta demo.</p>
+</main></body></html>
