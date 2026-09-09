@@ -71,10 +71,56 @@ Para alterar o número de WhatsApp padrão que recebe os orçamentos:
 ## Demo MVP — site + manutenção (09/09/2026)
 
 - Página comercial: `/demo/`.
-- Pousada fictícia navegável: `/demo/pousada/`.
+- Pousada fictícia navegável (tier essencial): `/demo/pousada/`.
+- Hotel boutique fictício navegável (tier completo): `/demo/boutique/`.
 - Proposta de preço em validação: R$ 1.990 de implantação + R$ 397/mês após publicação.
 - Plano, simulador de faturamento e estratégia: `docs/mvp/`. A documentação operacional não entra no build do site.
 - O modelo gera uma simulação de cotação; não consulta inventário nem confirma reservas. O formulário comercial prepara o link para o WhatsApp configurado, sem envio automático nem armazenamento.
 - Construir: `node scripts/build-demo.cjs`. Publicar `dist` no projeto Cloudflare Pages `meuhotelonline`, conta comercial `8c4f3b0ccc2ee9001b6dd8322b8b6ca9`.
 - A home, os assets e o material mkt preexistentes são preservados. Não executar `wrangler pages deploy .`, pois isso exporia documentação operacional.
 - Conferir `demo/release.json` no deploy para identificar o SHA. URLs de demo têm `noindex`.
+
+---
+
+## 🏨 Demo Boutique — template Next.js embutido
+
+A segunda demo (`/demo/boutique/`) é o template
+[hotel-boutique-luxury](https://github.com/cspgabriel/hotel-boutique-luxury)
+exportado como HTML estático e versionado aqui. Serve o tier alto do funil:
+hotel 5★ com suítes, gastronomia, eventos, spa e ofertas — escopo que não cabe
+na proposta de R$ 1.990 + R$ 397/mês.
+
+### Como atualizar
+
+```bash
+# clona/atualiza o template, builda em modo demo e sincroniza demo/boutique/
+node scripts/sync-boutique-demo.cjs
+
+# usando um clone local do template
+TEMPLATE_DIR=../hotel-boutique-luxury node scripts/sync-boutique-demo.cjs
+```
+
+Depois revise o diff e commite `demo/boutique/`. O SHA do template usado fica em
+`demo/boutique/source.json`.
+
+### O que o modo demo garante
+
+O template lê variáveis `NEXT_PUBLIC_*` no build; o script de sync as define:
+
+| Variável | Efeito |
+|---|---|
+| `NEXT_PUBLIC_BASE_PATH` | Serve o site em `/demo/boutique/` sem quebrar assets e rotas |
+| `NEXT_PUBLIC_DEMO_BANNER` | Faixa "site de demonstração · hotel fictício" + `noindex` no `<head>` |
+| `NEXT_PUBLIC_DEMO_BANNER_HREF` | Link de volta para a oferta real |
+| `NEXT_PUBLIC_DEMO_WHATSAPP` | Redireciona os CTAs para o WhatsApp comercial |
+| `NEXT_PUBLIC_DEMO_PHONE` | Redireciona os links `tel:` para o telefone comercial |
+
+Os dois últimos são obrigatórios: os contatos do hotel fictício no template
+podem pertencer a terceiros reais, e o lead interessado precisa chegar a quem
+vende o site.
+
+### Pendência conhecida
+
+As imagens do template são hotlinks do Unsplash. Aceitável em demo `noindex`;
+**não** aceitável em site de cliente pago — antes da primeira entrega é preciso
+baixar, otimizar e servir as imagens localmente, com licença verificada.
