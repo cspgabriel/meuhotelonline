@@ -79,7 +79,9 @@ fs.cpSync(out, dest, { recursive: true });
 
 // robots.txt e sitemap.xml do template competem com os do site host e apontam
 // para o dominio ficticio. A demo ja e noindex via _headers e via metadata.
-for (const f of ['robots.txt', 'sitemap.xml', 'index.txt']) {
+// Os demais .txt do export sao payloads RSC usados na navegacao client-side:
+// nao remover.
+for (const f of ['robots.txt', 'sitemap.xml']) {
   fs.rmSync(path.join(dest, f), { force: true });
 }
 
