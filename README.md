@@ -126,3 +126,52 @@ cliente pago isso não serve — o template traz o pipeline que resolve:
 `npm run localize-images` baixa, converte para WebP e gera `CREDITS.md` com a
 origem de cada foto, e `npm run validate:client` bloqueia a entrega enquanto
 sobrar qualquer hotlink. Veja o README do template.
+
+---
+
+## 📄 Página de proposta — `/orcamento/`
+
+Proposta comercial com calculadora e aceite pelo WhatsApp, no mesmo padrão da
+proposta da Mell: o cliente marca o que quer, os valores se ajustam e o botão
+abre o WhatsApp com a mensagem de aceite já montada. Nada é armazenado e nada é
+cobrado na página.
+
+**Uma página serve todos os prospects.** Os dados do destinatário vêm da URL, em
+vez de um HTML por cliente para manter em dia:
+
+```
+/orcamento/?h=Pousada+Recanto&c=Petrópolis&t=boutique&p=2026-0910-PR&v=2026-09-24
+```
+
+| Param | O que é | Padrão |
+| --- | --- | --- |
+| `h` | Nome da hospedagem | "sua hospedagem" |
+| `c` | Cidade | vazio |
+| `t` | `essencial` ou `boutique` | `essencial` |
+| `p` | Número da proposta | derivado da data |
+| `v` | Validade `AAAA-MM-DD` | hoje + 15 dias |
+
+Sem nenhum parâmetro a página funciona como orçamento self-service — é assim que
+`/demo/` a linka.
+
+### Preços
+
+Ficam todos em `PLANOS`, no topo de `orcamento/proposta.js`. Um lugar só.
+
+| | Implantação | Mensal |
+| --- | --- | --- |
+| Essencial | R$ 1.990 | R$ 397 |
+| Boutique | R$ 4.900 | R$ 697 |
+
+⚠️ **Os valores do Boutique são proposta, não decisão.** O Essencial é o que já
+está publicado em `/demo/`; o Boutique foi estimado pelo escopo maior (página por
+suíte, gastronomia, eventos, ofertas) e precisa da sua validação antes de ir a
+um cliente real.
+
+Adicionais: medição e anúncios R$ 500, tratamento de fotos R$ 390 — ambos
+pagamento único.
+
+### Indexação
+
+`/orcamento/*` sai com `noindex, nofollow` na meta tag e no `_headers`. É
+documento comercial privado, não página de captação.
