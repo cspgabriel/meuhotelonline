@@ -119,8 +119,10 @@ Os dois últimos são obrigatórios: os contatos do hotel fictício no template
 podem pertencer a terceiros reais, e o lead interessado precisa chegar a quem
 vende o site.
 
-### Pendência conhecida
+### Imagens da demo
 
-As imagens do template são hotlinks do Unsplash. Aceitável em demo `noindex`;
-**não** aceitável em site de cliente pago — antes da primeira entrega é preciso
-baixar, otimizar e servir as imagens localmente, com licença verificada.
+A demo usa hotlinks do Unsplash, aceitável em página `noindex`. Para site de
+cliente pago isso não serve — o template traz o pipeline que resolve:
+`npm run localize-images` baixa, converte para WebP e gera `CREDITS.md` com a
+origem de cada foto, e `npm run validate:client` bloqueia a entrega enquanto
+sobrar qualquer hotlink. Veja o README do template.
